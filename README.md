@@ -140,7 +140,7 @@ into `faust/learned_preset.dsp`.
 
 ```bash
 make demo                          # http://127.0.0.1:7860
-python scripts/app.py --share      # temporary public link
+python scripts/app.py --share      
 ```
 
 Upload speech, push the loop past its stability limit, hear the howl, hear it
