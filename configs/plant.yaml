@@ -1,0 +1,21 @@
+# Plant configuration. Defaults were chosen by measurement -- see
+# docs/method.md before changing filter_width or notch_width.
+sample_rate: 16000
+frame: 256
+cabin:
+  delay_ms: 8.0
+  res_freq: 900.0
+  res_gain_db: 12.0
+  res_q: 8.0
+  hf_cut_hz: 4000.0
+  ir_len: 1024
+notch:
+  slots: 4
+  filter_width: 31      # short on purpose: loop group delay dominates
+  notch_width: 0.08     # fraction of Nyquist
+msg:
+  silence_sec: 1.0
+  howl_threshold_db: -60.0
+  lo_db: -20.0
+  hi_db: 40.0
+  coarse_step_db: 2.0
