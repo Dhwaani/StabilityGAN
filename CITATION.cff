@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+title: "StabilityGAN: Differentiable Howling Suppression via a Learned Maximum-Stable-Gain Surrogate"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Chakraborty
+    given-names: Ashmita
+    orcid: "https://orcid.org/0009-0001-5506-9588"
+repository-code: "https://github.com/Dhwaani/StabilityGAN"
+license: MIT
+version: 0.1.0
+date-released: "2026-08-21"
+keywords:
+  - acoustic feedback control
+  - howling suppression
+  - differentiable dsp
+  - maximum stable gain
+  - speech enhancement
+references:
+  - type: conference-paper
+    title: "MetricGAN+: An Improved Version of MetricGAN for Speech Enhancement"
+    authors:
+      - family-names: Fu
+        given-names: Szu-Wei
+      - family-names: Yu
+        given-names: Cheng
+      - family-names: Hsieh
+        given-names: Tsun-An
+      - family-names: Plantinga
+        given-names: Peter
+      - family-names: Ravanelli
+        given-names: Mirco
+      - family-names: Lu
+        given-names: Xugang
+      - family-names: Tsao
+        given-names: Yu
+    year: 2021
+    collection-title: "Interspeech 2021"
+  - type: article
+    title: "Fifty Years of Acoustic Feedback Control: State of the Art and Future Challenges"
+    authors:
+      - family-names: van Waterschoot
+        given-names: Toon
+      - family-names: Moonen
+        given-names: Marc
+    year: 2011
+    journal: "Proceedings of the IEEE"
+    volume: 99
+    issue: 2
