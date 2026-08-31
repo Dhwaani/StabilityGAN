@@ -198,7 +198,7 @@ stabilitygan/
 │   └── faust_export.py   learned notches → FAUST preset
 ├── scripts/01..05, app.py
 ├── tests/                6 unit tests
-└── docs/                 method.md, validation.md
+└── docs/                 method.md
 ```
 
 ## Citing
