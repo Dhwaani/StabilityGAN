@@ -1,0 +1,26 @@
+# Training configuration, in the SpeechBrain hyperpyyaml spirit.
+seed: 0
+
+dataset:
+  n_train: 2000
+  n_val: 300
+  seconds: 1.0
+  speech_dir: null        # null -> synthetic fallback
+
+stabilitynet:
+  epochs: 40
+  batch: 16
+  lr: 0.0003
+  max_mae_db: 3.0         # GATE: exceed this and do not train the policy
+
+policy:
+  steps: 2000
+  batch: 4
+  lr: 0.0001
+  lambda_quality: 0.1     # do not set to 0: the policy will notch to silence
+  headroom_target_db: 8.0
+  disc_refresh_every: 5
+
+eval:
+  n_cabins: 30
+  seed: 1234
