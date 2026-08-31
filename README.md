@@ -82,7 +82,7 @@ export SPEECH=$PWD/LibriSpeech/dev-clean
 make help
 ```
 
-### Day 1 — establish the baselines (~2 min, CPU)
+### Establish the baselines (~2 min, CPU)
 
 ```bash
 make verify                       # or: make verify SPEECH=$SPEECH
@@ -99,7 +99,7 @@ GATE PASSED
 **This is a gate.** If the numbers are not close to these, stop and fix the plant
 before generating data. Everything downstream is referenced to them.
 
-### Day 2 — build the labelled dataset (hours, run on the GPU box)
+### Build the labelled dataset (hours, run on the GPU box)
 
 ```bash
 make dataset SPEECH=$SPEECH
@@ -112,7 +112,7 @@ and cache. Reduce `--n` to smoke-test:
 python scripts/02_make_dataset.py --n 20 --out data/smoke.pt
 ```
 
-### Day 3 — train the surrogate (~30 min on a GPU)
+### Train the surrogate (~30 min on a GPU)
 
 ```bash
 make surrogate
@@ -121,13 +121,13 @@ make surrogate
 **This is a gate.** Validation MAE must come in under 3 dB. If it does not, the
 GAN in step 4 cannot work, and you have found that out on Day 3 rather than Day 6.
 
-### Day 4 — train the policy
+### Train the policy
 
 ```bash
 make policy SPEECH=$SPEECH
 ```
 
-### Day 5 — the result
+### The result
 
 ```bash
 make eval SPEECH=$SPEECH
@@ -136,7 +136,7 @@ make eval SPEECH=$SPEECH
 Writes `docs/results.json`, three WAV renders into `audio/`, and a FAUST preset
 into `faust/learned_preset.dsp`.
 
-### Day 6 — the demo
+### The demo
 
 ```bash
 make demo                          # http://127.0.0.1:7860
