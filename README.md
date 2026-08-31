@@ -119,7 +119,7 @@ make surrogate
 ```
 
 **This is a gate.** Validation MAE must come in under 3 dB. If it does not, the
-GAN in step 4 cannot work, and you have found that out on Day 3 rather than Day 6.
+GAN in step 4 cannot work, and you have found that out while training the surrogate.
 
 ### Train the policy
 
