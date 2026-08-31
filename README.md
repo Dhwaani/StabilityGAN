@@ -10,7 +10,7 @@ An extension of [faust-icc](https://github.com/Dhwaani/In-CarCommunication).
 
 ---
 
-## The idea in one paragraph
+## The idea 
 
 MetricGAN showed that you can optimize non-differentiable metrics like PESQ by training a discriminator to predict the metric and optimizing the speech enhancer against that predictor.
 
