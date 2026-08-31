@@ -12,7 +12,7 @@ An extension of [faust-icc](https://github.com/Dhwaani/In-CarCommunication).
 
 ## The idea 
 
-MetricGAN showed that you can optimize non-differentiable objective quality metrics like PESQ (Perceptual Evaluation of Speech Quality) by training a discriminator to predict the metric and optimizing the speech enhancer against that predictor.
+MetricGAN showed that we can optimize non-differentiable objective quality metrics like PESQ (Perceptual Evaluation of Speech Quality) by training a discriminator to predict the metric and optimizing the speech enhancer against that predictor.
 
 Acoustic feedback suppression faces the exact same challenge with Maximum Stable Gain (MSG). MSG is measured experimentally by progressively ramping up loop gain until self-oscillation occurs. Because this relies on a discrete threshold measurement (a bifurcation point), direct backpropagation through the physical loop is impossible.
 As a result, systems like `faust-icc` rely on hand-tuned heuristic thresholds to allocate notch filters. StabilityGAN adapts the MetricGAN framework to acoustic stability: it replaces quality prediction with a learned MSG surrogate network, allowing backpropagation to directly guide optimal notch placement.
@@ -119,7 +119,7 @@ make surrogate
 ```
 
 **This is a gate.** Validation MAE must come in under 3 dB. If it does not, the
-GAN in step 4 cannot work, and you have found that out while training the surrogate.
+GAN in step 4 cannot work, and we have found that out while training the surrogate.
 
 ### Train the policy
 
