@@ -22,7 +22,7 @@ As a result, systems like `faust-icc` rely on hand-tuned heuristic thresholds to
 | | |
 |---|---|
 | Plant, notch bank, MSG sweep | working, unit-tested |
-| Classical baselines | measured — see [docs/validation.md](docs/validation.md) |
+| Classical baselines | measured |
 | StabilityNet + policy training | implemented, **not yet trained to a result** |
 
 The bar the learned policy has to clear is **+7.75 dB** of added stable gain, which is what oracle notch placement achieves on the default cabin. The greedy self-allocating cascade — the behaviour of `ic.notchBank` in `faust-icc` —
